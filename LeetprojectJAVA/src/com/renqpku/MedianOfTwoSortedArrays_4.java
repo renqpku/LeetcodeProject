@@ -59,8 +59,8 @@ public class MedianOfTwoSortedArrays_4 {
 		if (m == 0)
 			return b[begin2 + k - 1];
 		if (k == 1)
-			return Integer.min(a[begin1], b[begin2]);
-		int partA = Integer.min(k / 2, m), partB = k - partA;
+			return Math.min(a[begin1], b[begin2]);
+		int partA = Math.min(k / 2, m), partB = k - partA;
 		if (a[begin1 + partA - 1] == b[begin2 + partB - 1])
 			return a[begin1 + partA - 1];
 		else if (a[begin1 + partA - 1] > b[begin2 + partB - 1])
